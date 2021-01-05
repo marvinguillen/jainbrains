@@ -1,6 +1,6 @@
 package io.javabrains.springboot.jainbrains;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 public class TopicService {
     @Autowired
     private TopicRepository topicRepository;
-  private List<Topic> topics= new ArrayList<>(Arrays.asList(
+  /*private List<Topic> topics= new ArrayList<>(Arrays.asList(
             new Topic("Spring","Spring Framework","Spring F Descrip"),
             new Topic("Java","Java Framework","Java F Descrip"),
             new Topic("JavaScript","JavaScript Framework","JavaScript F Descrip"),
             new Topic("Eclipse","Eclipse Framework","Eclipse F Descrip")
-    ));
+    ));*/
     public List<Topic> getAllTopics(){
        // return topics;
        List<Topic> topics =new ArrayList<>();
